@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.Random;
 
-public class midtrans {
+    public class register {
         @Test
         public void trans () throws InterruptedException {
             System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
@@ -30,35 +30,12 @@ public class midtrans {
                 sb.append(campur);
             }
             String number = "1234567890";
-            StringBuilder numb = new StringBuilder();
-            Random numbRand = new Random();
-
-            int jumlah = 2;
-            for (int i = 0; i < 2; i++) {
-               int all = numbRand.nextInt(number.length());
-                char mix = number.charAt(all);
-                numb.append(mix);
-            }
-            buyBtn.click();
-
-            user.clear();
-            user.sendKeys("Nisa");
-            Thread.sleep(3000);
-
-            email.clear();
-            String randomStr = sb.toString();
-            String randomStr2 = number.toString();
-          email.sendKeys("Nisa@mail.com");
-          Thread.sleep(3000);
-
-            phone.clear();
-            phone.sendKeys("189076");
-            Thread.sleep(3000);
+            StringBuilder no = new StringBuilder();
+            Random numbRb = new Random();
 
             driver.quit();
 
         }
 
-}
-
+    }
 
